@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\manha.cetafest\\Documents\\nico\\blackproject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9CD9B4C3-D689-49B8-8895-C324DC9A1BBE}|blackproject\\blackproject.csproj|c:\\users\\manha.cetafest\\documents\\nico\\blackproject\\blackproject\\controllers\\agenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CD9B4C3-D689-49B8-8895-C324DC9A1BBE}|blackproject\\blackproject.csproj|solutionrelative:blackproject\\controllers\\agenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CD9B4C3-D689-49B8-8895-C324DC9A1BBE}|blackproject\\blackproject.csproj|c:\\users\\manha.cetafest\\documents\\nico\\blackproject\\blackproject\\views\\agencia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CD9B4C3-D689-49B8-8895-C324DC9A1BBE}|blackproject\\blackproject.csproj|solutionrelative:blackproject\\views\\agencia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CD9B4C3-D689-49B8-8895-C324DC9A1BBE}|blackproject\\blackproject.csproj|c:\\users\\manha.cetafest\\documents\\nico\\blackproject\\blackproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CD9B4C3-D689-49B8-8895-C324DC9A1BBE}|blackproject\\blackproject.csproj|solutionrelative:blackproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AgenciaController.cs",
+              "DocumentMoniker": "C:\\Users\\manha.cetafest\\Documents\\nico\\blackproject\\blackproject\\Controllers\\AgenciaController.cs",
+              "RelativeDocumentMoniker": "blackproject\\Controllers\\AgenciaController.cs",
+              "ToolTip": "C:\\Users\\manha.cetafest\\Documents\\nico\\blackproject\\blackproject\\Controllers\\AgenciaController.cs",
+              "RelativeToolTip": "blackproject\\Controllers\\AgenciaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T12:16:57.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\manha.cetafest\\Documents\\nico\\blackproject\\blackproject\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "blackproject\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\manha.cetafest\\Documents\\nico\\blackproject\\blackproject\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "blackproject\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T12:05:42.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\manha.cetafest\\Documents\\nico\\blackproject\\blackproject\\Views\\Agencia\\Index.cshtml",
+              "RelativeDocumentMoniker": "blackproject\\Views\\Agencia\\Index.cshtml",
+              "ToolTip": "C:\\Users\\manha.cetafest\\Documents\\nico\\blackproject\\blackproject\\Views\\Agencia\\Index.cshtml",
+              "RelativeToolTip": "blackproject\\Views\\Agencia\\Index.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAIUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-08T11:55:04.387Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
