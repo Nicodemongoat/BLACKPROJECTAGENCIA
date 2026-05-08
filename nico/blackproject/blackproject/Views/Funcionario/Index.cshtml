@@ -1,0 +1,201 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Funcionário</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        body {
+            background: #f4f4f4;
+            padding: 30px;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .campo {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background: #0056b3;
+            }
+
+        table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+
+            table th {
+                background: #007bff;
+                color: white;
+                padding: 10px;
+            }
+
+            table td {
+                border: 1px solid #ddd;
+                padding: 10px;
+            }
+
+        @@media(max-width: 700px) {
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Cadastro de Funcionário</h1>
+
+        <div class="grid">
+
+            <div class="campo">
+                <label>Código</label>
+                <input type="number" id="codigo" />
+            </div>
+
+            <div class="campo">
+                <label>Sexo</label>
+                <input type="text" id="sexo" />
+            </div>
+
+            <div class="campo">
+                <label>Cidade</label>
+                <input type="text" id="cidade" />
+            </div>
+
+            <div class="campo">
+                <label>Estado</label>
+                <input type="text" id="estado" />
+            </div>
+
+            <div class="campo">
+                <label>Função</label>
+                <input type="text" id="funcao" />
+            </div>
+
+        </div>
+
+        <button onclick="adicionarFuncionario()">
+            Adicionar
+        </button>
+
+        <table id="tabela">
+
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Sexo</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
+                    <th>Função</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script>
+
+        function adicionarFuncionario() {
+
+            let codigo = document.getElementById("codigo").value;
+            let sexo = document.getElementById("sexo").value;
+            let cidade = document.getElementById("cidade").value;
+            let estado = document.getElementById("estado").value;
+            let funcao = document.getElementById("funcao").value;
+
+            if (codigo == "" || sexo == "" || cidade == "" || estado == "" || funcao == "") {
+
+                alert("Preencha todos os campos");
+                return;
+            }
+
+            let tabela = document
+                .getElementById("tabela")
+                .getElementsByTagName("tbody")[0];
+
+            let linha = tabela.insertRow();
+
+            linha.insertCell(0).innerHTML = codigo;
+            linha.insertCell(1).innerHTML = sexo;
+            linha.insertCell(2).innerHTML = cidade;
+            linha.insertCell(3).innerHTML = estado;
+            linha.insertCell(4).innerHTML = funcao;
+
+            limparCampos();
+        }
+
+        function limparCampos() {
+
+            document.getElementById("codigo").value = "";
+            document.getElementById("sexo").value = "";
+            document.getElementById("cidade").value = "";
+            document.getElementById("estado").value = "";
+            document.getElementById("funcao").value = "";
+        }
+
+    </script>
+
+</body>
+</html>
