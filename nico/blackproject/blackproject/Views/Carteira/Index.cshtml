@@ -1,0 +1,192 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Carteira</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        body {
+            background: #f4f4f4;
+            padding: 30px;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .campo {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .checkbox {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 25px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background: green;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background: darkgreen;
+            }
+
+        table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+
+            table th {
+                background: green;
+                color: white;
+                padding: 10px;
+            }
+
+            table td {
+                border: 1px solid #ddd;
+                padding: 10px;
+            }
+
+        @@media(max-width: 700px) {
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Cadastro de Carteira</h1>
+
+        <div class="grid">
+
+            <div class="campo">
+                <label>Código</label>
+                <input type="number" id="codigo" />
+            </div>
+
+            <div class="campo">
+                <label>Nome</label>
+                <input type="text" id="nome" />
+            </div>
+
+        </div>
+
+        <div class="checkbox">
+
+            <input type="checkbox" id="ativa" />
+
+            <label>Ativa</label>
+
+        </div>
+
+        <button onclick="adicionarCarteira()">
+            Adicionar
+        </button>
+
+        <table id="tabela">
+
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>Ativa</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script>
+
+        function adicionarCarteira() {
+
+            let codigo = document.getElementById("codigo").value;
+            let nome = document.getElementById("nome").value;
+            let ativa = document.getElementById("ativa").checked;
+
+            if (codigo == "" || nome == "") {
+
+                alert("Preencha todos os campos");
+                return;
+            }
+
+            let tabela = document
+                .getElementById("tabela")
+                .getElementsByTagName("tbody")[0];
+
+            let linha = tabela.insertRow();
+
+            linha.insertCell(0).innerHTML = codigo;
+            linha.insertCell(1).innerHTML = nome;
+            linha.insertCell(2).innerHTML = ativa ? "Sim" : "Não";
+
+            limparCampos();
+        }
+
+        function limparCampos() {
+
+            document.getElementById("codigo").value = "";
+            document.getElementById("nome").value = "";
+            document.getElementById("ativa").checked = false;
+        }
+
+    </script>
+
+</body>
+</html>
